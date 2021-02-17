@@ -4,61 +4,80 @@ import { createGlobalStyle } from "styled-components";
 
 const pageStyles = {
     "404": {
-        "overflow-y": "hidden"
+        "overflow-y": "",
+        "overflow-x": "hidden"
     },
     "index": {
-        "overflow-y": "hidden"
+        "overflow-y": "",
+        "overflow-x": "hidden"
     },
     "vacancies": {
-        "overflow-y": "hidden"
+        "overflow-y": "",
+        "overflow-x": "hidden"
     },
     "uteam": {
-        "overflow-y": "hidden"
+        "overflow-y": "",
+        "overflow-x": "hidden"
     },
     "resume": {
-        "overflow-y": "hidden"
+        "overflow-y": "",
+        "overflow-x": "hidden"
     },
     "contacts": {
-        "overflow-y": "hidden"
+        "overflow-y": "",
+        "overflow-x": "hidden"
     },
     "vacancies/pr-menedzher": {
-        "overflow-y": "hidden"
+        "overflow-y": "",
+        "overflow-x": "hidden"
     },
     "vacancies/back-end-razrabotchik-php": {
-        "overflow-y": "hidden"
+        "overflow-y": "",
+        "overflow-x": "hidden"
     },
     "vacancies/specialist-po-seo-optimizacii-sajtov": {
-        "overflow-y": "hidden"
+        "overflow-y": "",
+        "overflow-x": "hidden"
     },
     "vacancies/sborka-sajtov-na-konstruktore-sajtov-ukit": {
-        "overflow-y": "hidden"
+        "overflow-y": "",
+        "overflow-x": "hidden"
     },
     "vacancies/sborshik-sajtov-na-konstruktorah-ucozuweb": {
-        "overflow-y": "hidden"
+        "overflow-y": "",
+        "overflow-x": "hidden"
     },
     "vacancies/junior-nodejs-razrabotchik": {
-        "overflow-y": "hidden"
+        "overflow-y": "",
+        "overflow-x": "hidden"
     },
     "vacancies/menedzher-dizajner-shablonov": {
-        "overflow-y": "hidden"
+        "overflow-y": "",
+        "overflow-x": "hidden"
     },
     "vacancies/specialist-sluzhby-tehnicheskoj-podderzhki": {
-        "overflow-y": "hidden"
+        "overflow-y": "",
+        "overflow-x": "hidden"
     },
     "vacancies/senior-nodejs-engineer": {
-        "overflow-y": "hidden"
+        "overflow-y": "",
+        "overflow-x": "hidden"
     },
     "vacancies/programmist-perl": {
-        "overflow-y": "hidden"
+        "overflow-y": "",
+        "overflow-x": "hidden"
     },
     "vacancies/specialist-sluzhby-tehnicheskoj-podderzhki1": {
-        "overflow-y": "hidden"
+        "overflow-y": "",
+        "overflow-x": "hidden"
     },
     "vacancies/pr-menedzher1": {
-        "overflow-y": "hidden"
+        "overflow-y": "",
+        "overflow-x": "hidden"
     },
     "vacancies/technology-evangelistdeveloper-advocate": {
-        "overflow-y": "hidden"
+        "overflow-y": "",
+        "overflow-x": "hidden"
     }
 };
 

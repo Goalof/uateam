@@ -187,7 +187,8 @@ export default {
 	"projectType": "gatsby",
 	"site": {
 		"styles": {
-			"overflow-y": "hidden"
+			"overflow-y": "",
+			"overflow-x": "hidden"
 		},
 		"seo": {}
 	}
