@@ -186,7 +186,9 @@ export default {
 	"mode": "production",
 	"projectType": "gatsby",
 	"site": {
-		"styles": {},
+		"styles": {
+			"overflow-y": "hidden"
+		},
 		"seo": {}
 	}
 }
