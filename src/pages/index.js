@@ -3,7 +3,7 @@ import theme from "theme";
 import { Theme, Link, Image, Text, Box, Icon, Span, Strong } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { Override, StackItem, Menu, Stack, Section } from "@quarkly/components";
+import { RawHtml, Override, StackItem, Menu, Stack, Section } from "@quarkly/components";
 import * as Components from "components";
 import { FaVk, FaFacebookF, FaTwitter, FaInstagram, FaOdnoklassniki } from "react-icons/fa";
 export default (() => {
@@ -50,8 +50,8 @@ export default (() => {
 							/>
 						</Link>
 						<Text font="normal 500 18px/50px 'AvenirNextCyrMedium', sans-serif" margin="0px 0px 0px 0px" display="inline-block" color="#ffffff">
-							<Link href="https://ru.uteam.pro/" color="#ffffff" text-decoration-line="initial" font="500 18px/50px ">
-								Вакансии в России
+							<Link href="/" color="#ffffff" text-decoration-line="initial" font="500 18px/50px ">
+								Вакансії в Україні{"\n\n"}
 							</Link>
 						</Text>
 						<Text
@@ -62,13 +62,13 @@ export default (() => {
 							nout-display="none"
 						>
 							<Link
-								href="http://ua.uteam.pro/"
+								href="http://ru.uteam.pro/"
 								color="#ffffff"
 								text-decoration-line="initial"
 								hover-color="#ffe02d"
 								transition="color 0.2s ease 0s"
 							>
-								Вакансії в Україні{" "}
+								Вакансии в России
 							</Link>
 						</Text>
 						<Text
@@ -134,12 +134,12 @@ export default (() => {
 						/>
 						<Override
 							slot="Button Liner"
-							nout-background="#ffffff"
 							nout-min-height="3px"
 							border-radius="6px"
 							nout-position="absolute"
 							min-height={0}
 							min-width={0}
+							nout-background="#ffffff"
 						/>
 						<Override
 							slot="Button Liner1"
@@ -149,13 +149,25 @@ export default (() => {
 							nout-right="0px"
 						/>
 						<Override slot="Button Liner2" nout-top="11px" nout-border-radius="6px" nout-right="0px" />
-						<Override slot="Button Liner3" nout-top="18px" nout-border-radius="6px" nout-right="0px" />
-						<Override slot="Button Liner1 :closed" nout-width="22px" />
-						<Override slot="Button Liner2 :closed" nout-width="22px" />
+						<Override
+							slot="Button Liner3"
+							nout-top="18px"
+							nout-border-radius="6px"
+							nout-right="0px"
+							nout-background="#ffffff"
+						/>
+						<Override slot="Button Liner1 :closed" nout-width="22px" nout-background="#ffffff" />
+						<Override slot="Button Liner2 :closed" nout-width="22px" nout-background="#ffffff" />
 						<Override slot="Button Liner3 :closed" nout-width="22px" />
 						<Override slot="Button Liner2 :open" nout-opacity="0" nout-width="32px" />
 						<Override slot="Button Liner1 :open" nout-width="36px" nout-transform="translateY(12px) rotate(225deg)" nout-background="--color-dark" />
-						<Override slot="Button Liner3 :open" nout-width="36px" nout-transform="translateY(-12px) rotate(135deg)" background="--color-green" />
+						<Override
+							slot="Button Liner3 :open"
+							nout-width="36px"
+							nout-transform="translateY(-12px) rotate(135deg)"
+							background="--color-green"
+							nout-background="#000000"
+						/>
 						<Override slot="Content2 :closed" nout-opacity="0" nout-transition="transform --transitionDuration-normal step-end 0s,opacity --transitionDuration-normal --transitionTimingFunction-easeOut" nout-transform="translateY(-100%)" />
 						<Override slot="Content2 :open" nout-transform="translateY(0%)" nout-transition="transform --transitionDuration-normal step-start 0s,opacity --transitionDuration-normal --transitionTimingFunction-easeOut" nout-opacity="1" />
 						<Override slot="Button2 :open" nout-position="fixed" />
@@ -184,7 +196,7 @@ export default (() => {
 								nout-margin="24px 0px 24px 12px"
 								nout-font="normal 500 18px/42px 'AvenirNextCyrMedium', sans-serif"
 							>
-								Вакансии в России
+								Вакансії в Україні{"\n\n"}
 							</Text>
 						</Box>
 						<Menu
@@ -210,6 +222,9 @@ export default (() => {
 							<Override slot="item" nout-padding="15px 25px 15px 25px" />
 							<Override slot="link-index">
 								Главная
+							</Override>
+							<Override slot="link-uteam">
+								uTeam
 							</Override>
 						</Menu>
 						<StackItem width="70%" display="flex" lg-width="100%" nout-width="100%">
@@ -244,7 +259,7 @@ export default (() => {
 									nout-font="18px AvenirNextCyrRegular, sans-serif"
 									nout-padding="0px 0px 0px 0px"
 								>
-									Careers for Foreigners
+									Applying from overseas
 								</Link>
 							</Text>
 							<Text
@@ -267,7 +282,7 @@ export default (() => {
 									lg-margin="0px 0px 0px 0px"
 									nout-font="18px AvenirNextCyrRegular, sans-serif"
 								>
-									Вакансії в Україні{" "}
+									Вакансии в России
 								</Link>
 							</Text>
 						</StackItem>
@@ -437,14 +452,14 @@ export default (() => {
 					/>
 					<Text
 						color="#ffffff"
-						font="1000 29vw/0.6 'AvenirNextCyrBold', sans-serif"
+						font="1000 28vw/0.6 'AvenirNextCyrBold', sans-serif"
 						margin="-10px 0px 50px 10px"
 						width="100%"
 						text-align="right"
 						nout-margin="10px 0px 50px 20px"
 						nout-font="1000 33vw/0.6 'AvenirNextCyrBold', sans-serif"
 					>
-						165
+						123
 					</Text>
 					<Box
 						padding="0 14% 0 14%"
@@ -529,23 +544,22 @@ export default (() => {
 				<Section padding="0px 0 40px 0">
 					<Override slot="SectionContent" align-items="center" width="100%" />
 					<Components.EmbedHTML width="100%" />
-					<Components.EmbedJS />
 				</Section>
 			</Components.PopUp>
 			<Stack margin="0px 0px 0px 0px" max-width="750px" width="100%" gap="16px">
 				{"    "}
-				<StackItem width="25%" display="flex">
-					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" />
+				<StackItem width="50%" display="flex">
+					<Override slot="StackItemContent" align-items="center" justify-content="flex-end" padding="0px 10px 0px 0px" />
 					{"        "}
 					<Link
-						href="/vacancies/#msk"
+						href="/vacancies/#all"
 						text-decoration-line="initial"
 						color="#ffd83a"
 						font="normal 600 18px/24px 'AvenirNextCyrRegular', sans-serif"
 						hover-color="#ffffff"
 						transition="all 0.2s linear 0s"
 					>
-						Москва
+						Черкассы
 						<br />
 						<Span
 							color="#ffffff"
@@ -563,71 +577,13 @@ export default (() => {
 					</Link>
 					{"    "}
 				</StackItem>
-				<StackItem width="25%" display="flex">
-					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" />
-					{"        "}
-					<Link
-						href="/vacancies/#spb"
-						text-decoration-line="initial"
-						color="#ffd83a"
-						font="normal 600 18px/24px 'AvenirNextCyrRegular', sans-serif"
-						hover-color="#ffffff"
-						transition="all 0.2s linear 0s"
-					>
-						Санкт-Петербург
-						<br />
-						<Span
-							color="#ffffff"
-							font="600 12px/24px AvenirNextCyrRegular, sans-serif"
-							data-q-widget-type="PRIMITIVE"
-							overflow-wrap="normal"
-							word-break="normal"
-							white-space="normal"
-							text-indent="0"
-							text-overflow="clip"
-							hyphens="manual"
-						>
-							4 вакансия
-						</Span>
-					</Link>
-					{"    "}
-				</StackItem>
-				<StackItem width="25%" display="flex">
-					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" />
-					{"        "}
-					<Link
-						href="/vacancies/#rnd"
-						text-decoration-line="initial"
-						color="#ffd83a"
-						font="normal 600 18px/24px 'AvenirNextCyrRegular', sans-serif"
-						hover-color="#ffffff"
-						transition="all 0.2s linear 0s"
-					>
-						Ростов-на-Дону
-						<br />
-						<Span
-							color="#ffffff"
-							font="600 12px/24px AvenirNextCyrRegular, sans-serif"
-							data-q-widget-type="PRIMITIVE"
-							overflow-wrap="normal"
-							word-break="normal"
-							white-space="normal"
-							text-indent="0"
-							text-overflow="clip"
-							hyphens="manual"
-						>
-							5 вакансия
-						</Span>
-					</Link>
-					{"    "}
-				</StackItem>
-				<StackItem width="25%" display="flex">
-					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" />
+				<StackItem width="50%" display="flex">
+					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" padding="0px 0px 0px 10px" />
 					{"        "}
 					<Link
 						href="/vacancies/#fl"
 						text-decoration-line="initial"
-						color="#ffd83a"
+						color="#afc1db"
 						font="normal 600 18px/24px 'AvenirNextCyrRegular', sans-serif"
 						hover-color="#ffffff"
 						transition="all 0.2s linear 0s"
@@ -635,7 +591,7 @@ export default (() => {
 						Удаленная работа
 						<br />
 						<Span
-							color="#ffffff"
+							color="#afc1db"
 							font="600 12px/24px AvenirNextCyrRegular, sans-serif"
 							data-q-widget-type="PRIMITIVE"
 							overflow-wrap="normal"
@@ -645,7 +601,7 @@ export default (() => {
 							text-overflow="clip"
 							hyphens="manual"
 						>
-							3 вакансия
+							нет вакансий
 						</Span>
 					</Link>
 					{"    "}
@@ -699,8 +655,8 @@ export default (() => {
 							/>
 						</Link>
 						<Text font="normal 600 18px/50px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 0px 0px" display="inline-block" color="#ffffff">
-							<Link href="https://ru.uteam.pro/" color="#000000" text-decoration-line="initial" font="500 18px/50px 'AvenirNextCyrMedium', sans-serif">
-								Вакансии в России
+							<Link href="/" color="#000000" text-decoration-line="initial" font="500 18px/50px 'AvenirNextCyrMedium', sans-serif">
+								Вакансії в Україні
 							</Link>
 						</Text>
 						<Text
@@ -711,13 +667,13 @@ export default (() => {
 							nout-display="none"
 						>
 							<Link
-								href="http://ua.uteam.pro/"
+								href="http://ru.uteam.pro/"
 								color="#9BABBF"
 								text-decoration-line="initial"
 								hover-color="#ffe02d"
 								transition="color 0.2s ease 0s"
 							>
-								Вакансії в Україні{" "}
+								Вакансии в России
 							</Link>
 						</Text>
 						<Text
@@ -830,7 +786,7 @@ export default (() => {
 								nout-margin="24px 0px 24px 12px"
 								nout-font="normal 500 18px/42px 'AvenirNextCyrMedium', sans-serif"
 							>
-								Вакансии в России
+								Вакансії в Україні{"\n\n"}
 							</Text>
 						</Box>
 						<Menu
@@ -856,6 +812,9 @@ export default (() => {
 							<Override slot="item" nout-padding="15px 25px 15px 25px" />
 							<Override slot="link-index">
 								Главная
+							</Override>
+							<Override slot="link-uteam">
+								uTeam
 							</Override>
 						</Menu>
 						<StackItem width="70%" display="flex" lg-width="100%" nout-width="100%">
@@ -890,7 +849,7 @@ export default (() => {
 									nout-font="18px AvenirNextCyrRegular, sans-serif"
 									nout-padding="0px 0px 0px 0px"
 								>
-									Careers for Foreigners
+									Applying from overseas
 								</Link>
 							</Text>
 							<Text
@@ -913,7 +872,7 @@ export default (() => {
 									lg-margin="0px 0px 0px 0px"
 									nout-font="18px AvenirNextCyrRegular, sans-serif"
 								>
-									Вакансії в Україні{" "}
+									Вакансии в России
 								</Link>
 							</Text>
 						</StackItem>
@@ -1137,26 +1096,6 @@ export default (() => {
 				<StackItem width="33.3333%" display="flex" sm-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
-					<Image width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon3.svg?v=2021-01-27T14:59:58.223Z" />
-					<Text
-						font="normal 500 15px/18px 'AvenirNextCyrMedium'"
-						margin="23px 0px 70px 0px"
-						display="inline-block"
-						padding="0px 0px 0px 0px"
-						text-align="center"
-						color="#263238"
-						sm-margin="23px 0px 20px 0px"
-					>
-						Социальные
-						<br />
-						гарантии, ДМС
-						<br />
-					</Text>
-					{"    "}
-				</StackItem>
-				<StackItem width="33.3333%" display="flex" sm-width="50%">
-					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
-					{"        "}
 					<Image width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon4.svg?v=2021-01-27T14:59:58.223Z" />
 					<Text
 						font="normal 500 15px/18px 'AvenirNextCyrMedium'"
@@ -1175,7 +1114,7 @@ export default (() => {
 					</Text>
 					{"    "}
 				</StackItem>
-				<StackItem width="33.3333%" display="flex" sm-width="50%">
+				<StackItem width="50%" display="flex" sm-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
 					<Image width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/work.svg?v=2021-02-08T10:30:40.438Z" />
@@ -1193,7 +1132,7 @@ export default (() => {
 					</Text>
 					{"    "}
 				</StackItem>
-				<StackItem width="33.3333%" display="flex" sm-width="50%">
+				<StackItem width="50%" display="flex" sm-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
 					<Image width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon6.svg?v=2021-01-27T14:59:58.226Z" />
@@ -1214,7 +1153,7 @@ export default (() => {
 				</StackItem>
 			</Stack>
 		</Section>
-		<Section padding="24px 0 38px 0" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/Photo2.jpg?v=2021-01-25T00:03:55.645Z) center/cover no-repeat fixed padding-box">
+		<Section padding="24px 0 38px 0" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/Photo2.jpg?v=2021-02-16T10:29:31.547Z) center/cover no-repeat fixed padding-box">
 			<Override slot="SectionContent" align-items="center" />
 			<Stack margin="0px 0px 0px 0px" width="100%" max-width="750px" gap="--cmp-stack-gap-small">
 				{"    "}
@@ -1229,20 +1168,20 @@ export default (() => {
 				</StackItem>
 				{"    "}
 			</Stack>
-			<Stack margin="0px 0px 0px 0px" max-width="750px" width="100%" gap="--cmp-stack-gap-small">
+			<Stack margin="0px 0px 0px 0px" max-width="750px" width="100%" gap="16px">
 				{"    "}
-				<StackItem width="25%" display="flex" sm-width="100%" md-width="50%">
-					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" />
+				<StackItem width="25%" display="flex">
+					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" padding="0px 10px 0px 0px" />
 					{"        "}
 					<Link
-						href="/vacancies/#msk"
+						href="/vacancies/#all"
 						text-decoration-line="initial"
 						color="#ffd83a"
 						font="normal 600 18px/24px 'AvenirNextCyrRegular', sans-serif"
 						hover-color="#ffffff"
 						transition="all 0.2s linear 0s"
 					>
-						Москва
+						Черкассы
 						<br />
 						<Span
 							color="#ffffff"
@@ -1260,71 +1199,13 @@ export default (() => {
 					</Link>
 					{"    "}
 				</StackItem>
-				<StackItem width="25%" display="flex" sm-width="100%" md-width="50%">
-					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" />
-					{"        "}
-					<Link
-						href="/vacancies/#spb"
-						text-decoration-line="initial"
-						color="#ffd83a"
-						font="normal 600 18px/24px 'AvenirNextCyrRegular', sans-serif"
-						hover-color="#ffffff"
-						transition="all 0.2s linear 0s"
-					>
-						Санкт-Петербург
-						<br />
-						<Span
-							color="#ffffff"
-							font="600 12px/24px AvenirNextCyrRegular, sans-serif"
-							data-q-widget-type="PRIMITIVE"
-							overflow-wrap="normal"
-							word-break="normal"
-							white-space="normal"
-							text-indent="0"
-							text-overflow="clip"
-							hyphens="manual"
-						>
-							4 вакансия
-						</Span>
-					</Link>
-					{"    "}
-				</StackItem>
-				<StackItem width="25%" display="flex" sm-width="100%" md-width="50%">
-					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" />
-					{"        "}
-					<Link
-						href="/vacancies/#rnd"
-						text-decoration-line="initial"
-						color="#ffd83a"
-						font="normal 600 18px/24px 'AvenirNextCyrRegular', sans-serif"
-						hover-color="#ffffff"
-						transition="all 0.2s linear 0s"
-					>
-						Ростов-на-Дону
-						<br />
-						<Span
-							color="#ffffff"
-							font="600 12px/24px AvenirNextCyrRegular, sans-serif"
-							data-q-widget-type="PRIMITIVE"
-							overflow-wrap="normal"
-							word-break="normal"
-							white-space="normal"
-							text-indent="0"
-							text-overflow="clip"
-							hyphens="manual"
-						>
-							5 вакансия
-						</Span>
-					</Link>
-					{"    "}
-				</StackItem>
-				<StackItem width="25%" display="flex" sm-width="100%" md-width="50%">
-					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" />
+				<StackItem width="75%" display="flex">
+					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" padding="0px 0px 0px 10px" />
 					{"        "}
 					<Link
 						href="/vacancies/#fl"
 						text-decoration-line="initial"
-						color="#ffd83a"
+						color="#afc1db"
 						font="normal 600 18px/24px 'AvenirNextCyrRegular', sans-serif"
 						hover-color="#ffffff"
 						transition="all 0.2s linear 0s"
@@ -1332,7 +1213,7 @@ export default (() => {
 						Удаленная работа
 						<br />
 						<Span
-							color="#ffffff"
+							color="#afc1db"
 							font="600 12px/24px AvenirNextCyrRegular, sans-serif"
 							data-q-widget-type="PRIMITIVE"
 							overflow-wrap="normal"
@@ -1342,7 +1223,7 @@ export default (() => {
 							text-overflow="clip"
 							hyphens="manual"
 						>
-							3 вакансия
+							нет вакансий
 						</Span>
 					</Link>
 					{"    "}
@@ -1615,5 +1496,10 @@ export default (() => {
 		>
 			Made on Quarkly
 		</Link>
+		<RawHtml>
+			<style place={"endOfHead"} rawKey={"602d7555f92d7afdd8bf256a"}>
+				{"* {\n    scroll-behavior: smooth;\n    }\n    .active .fileText {\n    display: none;\n    }\n    input.fileText {\n        opacity: 1 !important;\n    }\n    * {\n      -webkit-tap-highlight-color: transparent!important;\n    }\n    @font-face {\n      font-family: 'AvenirNextCyrRegular';\n      src: url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Regular.eot');\n      src: url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'), url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Regular.woff') format('woff'), url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Regular.ttf') format('truetype');\n      font-weight: normal;\n      font-style: normal;\n      font-display: swap;\n    }\n    @font-face {\n      font-family: 'AvenirNextCyrMedium';\n      src: url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Medium.eot');\n      src: url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'), url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Medium.woff') format('woff'), url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Medium.ttf') format('truetype');\n      font-weight: normal;\n      font-style: normal;\n      font-display: swap;\n    }\n    @font-face {\n      font-family: 'AvenirNextCyrBold';\n      src: url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Bold.eot');\n      src: url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'), url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Bold.woff') format('woff'), url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Bold.ttf') format('truetype');\n      font-weight: normal;\n      font-style: normal;\n      font-display: swap;\n    }\n    @font-face {\n      font-family: 'AvenirNextCyrDemi';\n      src: url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Demi.otf');\n      font-weight: normal;\n      font-style: normal;\n      font-display: swap;\n    }\n    body {\n      font-family: 'AvenirNextCyrRegular', sans-serif;\n      font-weight: normal;\n      -webkit-font-smoothing: antialiased;\n      -moz-osx-font-smoothing: grayscale;\n    }"}
+			</style>
+		</RawHtml>
 	</Theme>;
 });

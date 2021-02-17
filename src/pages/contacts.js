@@ -1,11 +1,10 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Button, Box, Image, Icon } from "@quarkly/widgets";
+import { Theme, Link, Text, Box, Image } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { Override, StackItem, Stack, Section, GoogleMap } from "@quarkly/components";
+import { RawHtml, Override, StackItem, Stack, Section, GoogleMap } from "@quarkly/components";
 import * as Components from "components";
-import { FaVk, FaFacebookF, FaTwitter, FaInstagram, FaOdnoklassniki } from "react-icons/fa";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"contacts"} />
@@ -71,341 +70,83 @@ export default (() => {
 						Убедительная просьба сообщать о визите заранее
 						<br />
 					</Text>
+					<GoogleMap query="г.Черкассы, ул. Добровольского 1" margin="25px 0px 0px 0px" z-index="0" sm-margin="15px 0px 20px 0px" />
+					<Box display="flex" margin="0px 0px 25px 0px" sm-flex-direction="column">
+						<Box
+							display="flex"
+							flex-direction="column"
+							align-items="flex-start"
+							max-width="270px"
+							width="100%"
+						>
+							<Text
+								font="normal 400 18px/22px 'AvenirNextCyrMedium'"
+								margin="20px 0px 17px 0px"
+								display="inline-block"
+								sm-margin="0px 0px 30px 0px"
+								text-align="center"
+								color="#333"
+							>
+								Прийти
+							</Text>
+							<Text
+								font="normal 400 18px/22px 'AvenirNextCyrMedium'"
+								display="inline-block"
+								sm-margin="0px 0px 30px 0px"
+								color="#333"
+								margin="0px 0px 0px 0px"
+							>
+								г.Черкассы, ул. Добровольского 1, БЦ «Комфорт», 3 этаж{"\n\n"}
+							</Text>
+						</Box>
+						<Box display="flex" flex-direction="column" align-items="flex-start" max-width="300px">
+							<Text
+								font="normal 400 18px/22px 'AvenirNextCyrMedium'"
+								display="inline-block"
+								sm-text-align="center"
+								sm-margin="0px 0px 30px 0px"
+								text-align="center"
+								color="#333"
+								margin="20px 0px 17px 0px"
+							>
+								Написать
+								<Link href="mailto:job@ucoz.ru">
+									<br />
+								</Link>
+							</Text>
+							<Link
+								href="malito:job@ucoz.ru"
+								text-decoration-line="initial"
+								color="#4a8cfa"
+								font="normal 400 18px/24px 'AvenirNextCyrMedium'"
+								transition="color 0.2s linear 0s"
+								hover-color="#3d72cc"
+							>
+								job@ucoz.ua
+							</Link>
+						</Box>
+					</Box>
+					<Link
+						href="/vacancies"
+						background="#ffd83a"
+						text-decoration-line="initial"
+						color="#263238"
+						font="16px/50px 'AvenirNextCyrMedium', sans-serif"
+						padding="0px 15px 0px 15px"
+						margin="0px 0px 0px 0px"
+						transition="all 0.2s linear 0s"
+						hover-background="#e6c235"
+						border-radius="5px"
+					>
+						Смотреть все вакансии
+					</Link>
 					{"    "}
-				</StackItem>
-				{"    "}
-			</Stack>
-			<Stack margin="0px 0px 0px 0px" max-width="1170px" width="100%">
-				{"    "}
-				<StackItem width="100%" display="flex">
-					<Override slot="StackItemContent" flex-direction="column" align-items="flex-start" />
-					<Components.Tabs defaultTab="one" orientation="Horizontal" width="100%" height="auto">
-						<Components.TabList sm-width="100%" sm-display="flex" sm-flex-direction="column">
-							<Override slot="TabList Wrapper" sm-flex-direction="column" />
-							<Components.TabItem tabId="one" color="#263238" transition="all 0.2s linear 0s">
-								<Override
-									slot="Selected Tab"
-									color="#4a8cfa"
-									border-width="2px"
-									border-style="solid"
-									border-color="#4a8cfa"
-								/>
-								<Override
-									slot="Tab"
-									border-color="rgba(74, 140, 250, 0)"
-									border-radius="5px"
-									border-width="2px"
-									border-style="solid"
-									color="inherit"
-									transition="all 0.2s linear 0s"
-								/>
-								<Button
-									background="rgba(0, 119, 204, 0)"
-									color="inherit"
-									padding="8px 12px 8px 12px"
-									font="normal 400 16px/22px 'AvenirNextCyrMedium'"
-									transition="all 0.2s linear 0s"
-									hover-color="#4a8cfa"
-									focus-box-shadow="none"
-								>
-									Москва
-								</Button>
-							</Components.TabItem>
-							<Components.TabItem tabId="two" color="#263238" border-color="#263238" transition="all 0.2s linear 0s">
-								<Override
-									slot="Selected Tab"
-									color="#4a8cfa"
-									border-width="2px"
-									border-style="solid"
-									border-color="#4a8cfa"
-								/>
-								<Override
-									slot="Tab"
-									border-radius="5px"
-									border-width="2px"
-									border-style="solid"
-									border-color="rgba(0, 0, 0, 0)"
-									transition="all 0.2s linear 0s"
-								/>
-								<Button
-									background="rgba(0, 119, 204, 0)"
-									color="inherit"
-									padding="8px 12px 8px 12px"
-									font="normal 400 16px/22px 'AvenirNextCyrMedium'"
-									border-width="0px"
-									transition="all 0.2s linear 0s"
-									hover-color="#4a8cfa"
-									focus-box-shadow="none"
-								>
-									Санкт-Петербург
-								</Button>
-							</Components.TabItem>
-							<Components.TabItem tabId="three" color="#263238" border-color="#263238" transition="all 0.2s linear 0s">
-								<Override
-									slot="Selected Tab"
-									color="#4a8cfa"
-									border-width="2px"
-									border-style="solid"
-									border-color="#4a8cfa"
-								/>
-								<Override
-									slot="Tab"
-									border-radius="5px"
-									border-width="2px"
-									border-style="solid"
-									border-color="rgba(0, 0, 0, 0)"
-									transition="all 0.2s linear 0s"
-								/>
-								<Button
-									background="rgba(0, 119, 204, 0)"
-									color="inherit"
-									padding="8px 12px 8px 12px"
-									font="normal 400 16px/22px 'AvenirNextCyrMedium'"
-									border-width="0px"
-									transition="all 0.2s linear 0s"
-									hover-color="#4a8cfa"
-									focus-box-shadow="none"
-								>
-									Ростов-на-Дону
-								</Button>
-							</Components.TabItem>
-						</Components.TabList>
-						<Components.TabPanels>
-							<Components.TabPanel tabId="one">
-								<GoogleMap query="ул. Барклая 6, строение 5, БЦ" margin="15px 0px 0px 0px" z-index="0" sm-margin="15px 0px 20px 0px" />
-								<Box display="flex" margin="0px 0px 25px 0px" sm-flex-direction="column">
-									<Box
-										display="flex"
-										flex-direction="column"
-										align-items="flex-start"
-										max-width="270px"
-										width="100%"
-									>
-										<Text
-											font="normal 400 18px/22px 'AvenirNextCyrMedium'"
-											margin="20px 0px 17px 0px"
-											display="inline-block"
-											sm-margin="0px 0px 30px 0px"
-											text-align="center"
-											color="#333"
-										>
-											Прийти
-										</Text>
-										<Text
-											font="normal 400 18px/22px 'AvenirNextCyrMedium'"
-											display="inline-block"
-											sm-margin="0px 0px 30px 0px"
-											color="#333"
-											margin="0px 0px 0px 0px"
-										>
-											ул. Барклая 6, строение 5, БЦ «Барклай Плаза»
-											<br />
-										</Text>
-									</Box>
-									<Box display="flex" flex-direction="column" align-items="flex-start" max-width="300px">
-										<Text
-											font="normal 400 18px/22px 'AvenirNextCyrMedium'"
-											display="inline-block"
-											sm-text-align="center"
-											sm-margin="0px 0px 30px 0px"
-											text-align="center"
-											color="#333"
-											margin="20px 0px 17px 0px"
-										>
-											Написать
-											<Link href="mailto:job@ucoz.ru">
-												<br />
-											</Link>
-										</Text>
-										<Link
-											href="malito:job@ucoz.ru"
-											text-decoration-line="initial"
-											color="#4a8cfa"
-											font="normal 400 18px/24px 'AvenirNextCyrMedium'"
-											transition="color 0.2s linear 0s"
-											hover-color="#3d72cc"
-										>
-											job@ucoz.ru
-										</Link>
-									</Box>
-								</Box>
-								<Link
-									href="/vakansii"
-									background="#ffd83a"
-									text-decoration-line="initial"
-									color="#263238"
-									font="16px/50px 'AvenirNextCyrMedium', sans-serif"
-									padding="12px 15px 12px 15px"
-									margin="0px 0px 0px 0px"
-									transition="all 0.2s linear 0s"
-									hover-background="#e6c235"
-									border-radius="5px"
-								>
-									Смотреть все вакансии
-								</Link>
-							</Components.TabPanel>
-							<Components.TabPanel tabId="two">
-								<GoogleMap query=". г. Санкт-Петербург, пр. Московский, дом 22, литер Т" margin="15px 0px 0px 0px" z-index="0" sm-margin="15px 0px 20px 0px" />
-								<Box display="flex" margin="0px 0px 25px 0px" sm-flex-direction="column">
-									<Box
-										display="flex"
-										flex-direction="column"
-										align-items="flex-start"
-										max-width="270px"
-										width="100%"
-									>
-										<Text
-											font="normal 400 18px/22px 'AvenirNextCyrMedium'"
-											margin="20px 0px 17px 0px"
-											display="inline-block"
-											sm-margin="0px 0px 30px 0px"
-											text-align="center"
-											color="#333"
-										>
-											Прийти
-										</Text>
-										<Text
-											font="normal 400 18px/22px 'AvenirNextCyrMedium'"
-											display="inline-block"
-											sm-text-align="center"
-											sm-margin="0px 0px 30px 0px"
-											color="#333"
-											margin="0px 0px 0px 0px"
-										>
-											пр. Московский, дом 22, литер Т
-										</Text>
-									</Box>
-									<Box display="flex" flex-direction="column" align-items="flex-start" max-width="300px">
-										<Text
-											font="normal 400 18px/22px 'AvenirNextCyrMedium'"
-											display="inline-block"
-											sm-text-align="center"
-											sm-margin="0px 0px 30px 0px"
-											text-align="center"
-											color="#333"
-											margin="20px 0px 17px 0px"
-										>
-											Написать
-											<Link href="mailto:job@ucoz.ru">
-												<br />
-											</Link>
-										</Text>
-										<Link
-											href="malito:job@ucoz.ru"
-											text-decoration-line="initial"
-											color="#4a8cfa"
-											font="normal 400 18px/24px 'AvenirNextCyrMedium'"
-											transition="color 0.2s linear 0s"
-											hover-color="#3d72cc"
-										>
-											job@ucoz.ru
-										</Link>
-									</Box>
-								</Box>
-								<Link
-									href="/vakansii"
-									background="#ffd83a"
-									text-decoration-line="initial"
-									color="#263238"
-									font="16px/50px 'AvenirNextCyrMedium', sans-serif"
-									padding="12px 15px 12px 15px"
-									margin="0px 0px 0px 0px"
-									transition="all 0.2s linear 0s"
-									hover-background="#e6c235"
-									border-radius="5px"
-								>
-									Смотреть все вакансии
-								</Link>
-							</Components.TabPanel>
-							<Components.TabPanel tabId="three">
-								<GoogleMap
-									query="Ростов-на-Дону, ул. Алексея Береста, 6"
-									margin="15px 0px 0px 0px"
-									lg-z-index="1"
-									z-index="0"
-									sm-margin="15px 0px 20px 0px"
-								/>
-								<Box display="flex" margin="0px 0px 25px 0px" sm-flex-direction="column">
-									<Box
-										display="flex"
-										flex-direction="column"
-										align-items="flex-start"
-										max-width="270px"
-										width="100%"
-										sm-max-width="none"
-									>
-										<Text
-											font="normal 400 18px/22px 'AvenirNextCyrMedium'"
-											margin="20px 0px 17px 0px"
-											display="inline-block"
-											sm-text-align="center"
-											sm-margin="0px 0px 30px 0px"
-											text-align="center"
-											color="#333"
-										>
-											Прийти
-										</Text>
-										<Text
-											font="normal 400 18px/22px 'AvenirNextCyrMedium'"
-											display="inline-block"
-											sm-margin="0px 0px 30px 0px"
-											color="#333"
-											margin="0px 0px 0px 0px"
-										>
-											Ростов-на-Дону, ул. Алексея Береста, 6{"\n\n"}
-										</Text>
-									</Box>
-									<Box display="flex" flex-direction="column" align-items="flex-start" max-width="300px">
-										<Text
-											font="normal 400 18px/22px 'AvenirNextCyrMedium'"
-											display="inline-block"
-											sm-text-align="center"
-											sm-margin="0px 0px 30px 0px"
-											text-align="center"
-											color="#333"
-											margin="20px 0px 17px 0px"
-										>
-											Написать
-											<Link href="mailto:job@ucoz.ru">
-												<br />
-											</Link>
-										</Text>
-										<Link
-											href="malito:job@ucoz.ru"
-											text-decoration-line="initial"
-											color="#4a8cfa"
-											font="normal 400 18px/24px 'AvenirNextCyrMedium'"
-											transition="color 0.2s linear 0s"
-											hover-color="#3d72cc"
-										>
-											job@ucoz.ru
-										</Link>
-									</Box>
-								</Box>
-								<Link
-									href="/vakansii"
-									background="#ffd83a"
-									text-decoration-line="initial"
-									color="#263238"
-									font="16px/50px 'AvenirNextCyrMedium', sans-serif"
-									padding="12px 15px 12px 15px"
-									margin="0px 0px 0px 0px"
-									transition="all 0.2s linear 0s"
-									hover-background="#e6c235"
-									border-radius="5px"
-								>
-									Смотреть все вакансии
-								</Link>
-							</Components.TabPanel>
-						</Components.TabPanels>
-					</Components.Tabs>
-					{"            "}
 				</StackItem>
 				{"    "}
 			</Stack>
 			<Stack margin="30px 0px 0px 0px" max-width="1170px" width="100%">
 				{"    "}
-				<StackItem width="100%" display="flex">
+				<StackItem width="100%" display="none">
 					<Override slot="StackItemContent" flex-direction="column" align-items="flex-start" />
 					{"        "}
 					<Text
@@ -693,252 +434,7 @@ export default (() => {
 				{"    "}
 			</Stack>
 		</Section>
-		<Section
-			quarkly-title="Footer"
-			padding="0px 0px 0px 0px"
-			border-width="2px 0px 0px 0px"
-			border-style="solid"
-			border-color="#dbe6f4"
-			transition="all 400ms ease 0s"
-			lg-padding="10px 0px 10px 0px"
-		>
-			<Override slot="SectionContent" max-width="1170px" width="100%" />
-			<Stack margin="0px 0px 0px 0px" gap="0px">
-				<StackItem width="70%" display="flex" lg-width="100%">
-					<Override slot="StackItemContent" align-items="flex-end" padding="13px 30px 14px 30px" />
-					{"        "}
-					<Box display="flex" align-items="center" lg-flex-direction="column" lg-width="100%">
-						<Link href="/">
-							<Image
-								src="https://screenshot.ukit.com/src/goalov/21/2021-01-27-03-36-00.png"
-								color="#ffffff"
-								width="121px"
-								height="40px"
-								margin="3px 10px 3px 3px"
-								padding="0px 0px 0px 0px"
-							/>
-						</Link>
-						<Text
-							font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif"
-							margin="3px 0px 0px 22px"
-							display="inline-block"
-							color="#9BABBF"
-							lg-margin="10px 0px 0px 0px"
-							sm-margin="10px 0px 0px 0px"
-						>
-							<Link
-								href="https://blog.ucoz.ru/"
-								color="#AEC1D9"
-								text-decoration-line="initial"
-								hover-color="#4a8cfa"
-								transition="color 0.2s ease 0s"
-								font="400 14px/19px 'AvenirNextCyrMedium'"
-								target="_blank"
-								lg-padding="0px 0px 0px 0px"
-								lg-margin="0px 0px 0px 0px"
-							>
-								Блог компании
-							</Link>
-						</Text>
-						<Text
-							font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif"
-							margin="3px 0px 0px 22px"
-							display="inline-block"
-							color="#9BABBF"
-							lg-margin="10px 0px 0px 0px"
-							sm-margin="10px 0px 0px 0px"
-						>
-							<Link
-								href="http://www.ucoz.ru/all/"
-								color="#AEC1D9"
-								text-decoration-line="initial"
-								hover-color="#4a8cfa"
-								transition="color 0.2s ease 0s"
-								font="400 14px/19px 'AvenirNextCyrMedium'"
-								target="_blank"
-								lg-padding="0px 0px 0px 0px"
-								lg-margin="0px 0px 0px 0px"
-							>
-								Наши проекты
-							</Link>
-						</Text>
-						<Text
-							font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif"
-							margin="3px 0px 0px 22px"
-							display="inline-block"
-							color="#9BABBF"
-							lg-margin="10px 0px 0px 0px"
-							sm-margin="10px 0px 0px 0px"
-						>
-							<Link
-								href="http://ua.uteam.pro/"
-								color="#4a8cfa"
-								text-decoration-line="initial"
-								hover-color="#3d72cc"
-								transition="color 0.2s ease 0s"
-								font="300 14px/19px 'AvenirNextCyrMedium'"
-								lg-padding="0px 0px 0px 0px"
-								lg-margin="0px 0px 0px 0px"
-							>
-								Вакансії в Україні{" "}
-							</Link>
-						</Text>
-						<Text
-							font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif"
-							margin="3px 0px 0px 22px"
-							display="inline-block"
-							color="#9BABBF"
-							lg-margin="10px 0px 0px 0px"
-							sm-margin="10px 0px 0px 0px"
-						>
-							<Link
-								href="http://en.uteam.pro/"
-								color="#4a8cfa"
-								text-decoration-line="initial"
-								hover-color="#3d72cc"
-								transition="color 0.2s ease 0s"
-								font="300 14px/19px 'AvenirNextCyrMedium'"
-								lg-padding="0px 0px 0px 0px"
-								lg-margin="0px 0px 0px 0px"
-							>
-								Careers for Foreigners
-							</Link>
-						</Text>
-					</Box>
-				</StackItem>
-				<StackItem width="30%" display="flex" lg-width="100%">
-					<Override
-						slot="StackItemContent"
-						align-items="center"
-						padding="13px 30px 14px 30px"
-						justify-content="flex-end"
-						lg-justify-content="center"
-					/>
-					<Link
-						href="https://www.facebook.com/ucoz"
-						target="_blank"
-						margin="0px 15px 0px 0px"
-						border-color="#AFC1D8"
-						color="#AFC1D8"
-						border-radius="50%"
-						border-width="2px"
-						border-style="solid"
-						hover-background="#4a8cfa"
-						hover-color="#ffffff"
-						hover-border-color="#4a8cfa"
-					>
-						<Icon
-							category="fa"
-							icon={FaVk}
-							border-radius="50%"
-							padding="5px 5px 5px 5px"
-							transition="all 0.2s linear 0s"
-							size="20px"
-							hover-color="inherit"
-							color="inherit"
-						/>
-					</Link>
-					<Link
-						href="https://www.facebook.com/ucoz"
-						target="_blank"
-						margin="0px 15px 0px 0px"
-						border-color="#AFC1D8"
-						color="#AFC1D8"
-						border-radius="50%"
-						border-width="2px"
-						border-style="solid"
-						hover-background="#4a8cfa"
-						hover-color="#ffffff"
-						hover-border-color="#4a8cfa"
-					>
-						<Icon
-							category="fa"
-							icon={FaFacebookF}
-							border-radius="50%"
-							padding="5px 5px 5px 5px"
-							transition="all 0.2s linear 0s"
-							size="20px"
-							hover-color="inherit"
-							color="inherit"
-						/>
-					</Link>
-					<Link
-						href="https://twitter.com/ucoz_ru"
-						target="_blank"
-						margin="0px 15px 0px 0px"
-						border-color="#AFC1D8"
-						color="#AFC1D8"
-						border-radius="50%"
-						border-width="2px"
-						border-style="solid"
-						hover-background="#4a8cfa"
-						hover-color="#ffffff"
-						hover-border-color="#4a8cfa"
-					>
-						<Icon
-							category="fa"
-							icon={FaTwitter}
-							border-radius="50%"
-							padding="5px 5px 5px 5px"
-							transition="all 0.2s linear 0s"
-							size="20px"
-							hover-color="inherit"
-							color="inherit"
-						/>
-					</Link>
-					<Link
-						href="https://instagram.com/ucoz_ru"
-						target="_blank"
-						margin="0px 15px 0px 0px"
-						border-color="#AFC1D8"
-						color="#AFC1D8"
-						border-radius="50%"
-						border-width="2px"
-						border-style="solid"
-						hover-background="#4a8cfa"
-						hover-color="#ffffff"
-						hover-border-color="#4a8cfa"
-					>
-						<Icon
-							category="fa"
-							icon={FaInstagram}
-							border-radius="50%"
-							padding="5px 5px 5px 5px"
-							transition="all 0.2s linear 0s"
-							size="20px"
-							hover-color="inherit"
-							color="inherit"
-						/>
-					</Link>
-					<Link
-						href="http://ok.ru/ucozru"
-						target="_blank"
-						margin="0px 15px 0px 0px"
-						border-color="#AFC1D8"
-						color="#AFC1D8"
-						border-radius="50%"
-						border-width="2px"
-						border-style="solid"
-						hover-background="#4a8cfa"
-						hover-color="#ffffff"
-						hover-border-color="#4a8cfa"
-					>
-						<Icon
-							category="fa"
-							icon={FaOdnoklassniki}
-							border-radius="50%"
-							padding="5px 5px 5px 5px"
-							transition="all 0.2s linear 0s"
-							size="20px"
-							hover-color="inherit"
-							color="inherit"
-						/>
-					</Link>
-					{"        "}
-				</StackItem>
-				{"        "}
-			</Stack>
-		</Section>
+		<Components.Footer />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
@@ -961,5 +457,10 @@ export default (() => {
 		>
 			Made on Quarkly
 		</Link>
+		<RawHtml>
+			<style place={"endOfHead"} rawKey={"602d7555f92d7afdd8bf256a"}>
+				{"* {\n    scroll-behavior: smooth;\n    }\n    .active .fileText {\n    display: none;\n    }\n    input.fileText {\n        opacity: 1 !important;\n    }\n    * {\n      -webkit-tap-highlight-color: transparent!important;\n    }\n    @font-face {\n      font-family: 'AvenirNextCyrRegular';\n      src: url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Regular.eot');\n      src: url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'), url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Regular.woff') format('woff'), url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Regular.ttf') format('truetype');\n      font-weight: normal;\n      font-style: normal;\n      font-display: swap;\n    }\n    @font-face {\n      font-family: 'AvenirNextCyrMedium';\n      src: url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Medium.eot');\n      src: url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'), url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Medium.woff') format('woff'), url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Medium.ttf') format('truetype');\n      font-weight: normal;\n      font-style: normal;\n      font-display: swap;\n    }\n    @font-face {\n      font-family: 'AvenirNextCyrBold';\n      src: url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Bold.eot');\n      src: url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'), url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Bold.woff') format('woff'), url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Bold.ttf') format('truetype');\n      font-weight: normal;\n      font-style: normal;\n      font-display: swap;\n    }\n    @font-face {\n      font-family: 'AvenirNextCyrDemi';\n      src: url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Demi.otf');\n      font-weight: normal;\n      font-style: normal;\n      font-display: swap;\n    }\n    body {\n      font-family: 'AvenirNextCyrRegular', sans-serif;\n      font-weight: normal;\n      -webkit-font-smoothing: antialiased;\n      -moz-osx-font-smoothing: grayscale;\n    }"}
+			</style>
+		</RawHtml>
 	</Theme>;
 });

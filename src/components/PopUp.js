@@ -1,6 +1,7 @@
 import React, { useState, useCallback } from 'react';
 import { useOverrides } from '@quarkly/components';
 import { Box, Icon, Button } from '@quarkly/widgets';
+import EmbedJS from './EmbedJS';
 import { FiX } from "react-icons/fi";
 const duration = '.15s';
 const overrides = {
@@ -153,6 +154,8 @@ const BurgerMenu = props => {
 				<Box {...override('content')}>
 					                        
 					{children}
+					                        
+					<EmbedJS isOpen={isOpen} />
 					                    
 				</Box>
 				                

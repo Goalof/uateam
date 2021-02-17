@@ -3,7 +3,7 @@ import theme from "theme";
 import { Theme, Link, Text, List, Box } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { Override, StackItem, Stack, Section } from "@quarkly/components";
+import { RawHtml, Override, StackItem, Stack, Section } from "@quarkly/components";
 import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
@@ -85,57 +85,66 @@ export default (() => {
 						<Components.Tab2 tabId="one" width="100%">
 							<Box>
 								<Text color="#263238" font="36px 'AvenirNextCyrRegular'" margin="0px 0px 16px 0px" sm-text-align="center">
-									Написать хорошее резюме
+									Резюме
 								</Text>
 								<Text font="18px/26px 'AvenirNextCyrRegular', sans-serif" color="#333" sm-text-align="center">
-									Хорошее резюме поможет вам презентовать себя, показать свою ценность как профессионала, а нам — составить о вас первое впечатление. Позаботьтесь заранее о том, чтобы это впечатление сложилось правильное.
+									Резюме - это ваша визитная карточка, подойдите к его написанию со всей серьезностью.
 									<br />
-								</Text>
-								<Text font="18px/26px 'AvenirNextCyrRegular', sans-serif" color="#333" sm-text-align="center">
-									Даже если вы хотите работать у нас фрилансером или удаленно, вы должны иметь резюме.
-									<br />
+									{"\n\n"}
 								</Text>
 								<Text font="24px/30px 'AvenirNextCyrMedium', sans-serif" color="#333" margin="24px 0px 4px 0px">
-									Правила хорошего резюме:
+									Без резюме мы не пригласим вас на собеседование
+									<br />
+									{"\n\n"}
+								</Text>
+								<Text font="18px/26px 'AvenirNextCyrRegular', sans-serif" color="#333" sm-text-align="center">
+									Для каждой нашей вакансии есть базовые требования: от навыков до часового пояса вашего проживания. Мы не сможем пригласить вас на интервью, не имея представления, сможете ли вы им соответствовать, - а такое представление дает именно резюме и не что иное.
+									<br />
+									{"\n\n"}
+								</Text>
+								<Text font="24px/30px 'AvenirNextCyrMedium', sans-serif" color="#333" margin="24px 0px 4px 0px">
+									Что должно быть в резюме
 								</Text>
 								<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
 									<Text font="normal 400 18px/30px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 8px 5px" color="#333">
-										Четко сформулируйте вашу профессиию, желаемую должность, укажите уровень зарплаты
+										общая информация о вас (ФИО, дата рождения, город проживания, контактные данные);
+									</Text>
+								</List>
+								<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
+									<Text font="normal 400 18px/30px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 8px 5px" color="#333">
+										образование;
 										<br />
+										{"\n\n"}
 									</Text>
 								</List>
 								<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
 									<Text font="normal 400 18px/30px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 8px 5px" color="#333">
-										В опыте работы не забудьте указать фриланс-проекты
-										<br />
+										опыт работы (включая, опыт фриланса) с указанием компаний, должностей и должностных обязанностей;
 									</Text>
 								</List>
 								<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
 									<Text font="normal 400 18px/30px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 8px 5px" color="#333">
-										Не стесняйтесь указать факты, не относящиеся к работе: увлечения, специфические навыки
+										профессиональные навыки.
 									</Text>
 								</List>
-								<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
-									<Text font="normal 400 18px/30px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 8px 5px" color="#333">
-										Пишите честно, без формализма и стандартных фраз про пунктуальность и стрессоустойчивость
-									</Text>
-								</List>
-								<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
-									<Text font="normal 400 18px/30px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 8px 5px" color="#333">
-										Дополните резюме свежей фотографией
-										<br />
-									</Text>
-								</List>
-								<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
-									<Text font="normal 400 18px/30px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 8px 5px" color="#333">
-										Не забудьте про портфолио
-									</Text>
-								</List>
-								<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
-									<Text font="normal 400 18px/30px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 8px 5px" color="#333">
-										Проверьте резюме на орфографические ошибки
-									</Text>
-								</List>
+								<Text font="24px/30px 'AvenirNextCyrMedium', sans-serif" color="#333" margin="24px 0px 4px 0px">
+									Что не будет лишним
+								</Text>
+								<Text font="18px/26px 'AvenirNextCyrRegular', sans-serif" color="#333" sm-text-align="center">
+									Мы хотим знать о вас все!
+									<br />
+									Не стесняйтесь описать свои личные качества, увлечения, специфические навыки и умения - все что может охарактеризовать вас с лучшей стороны. Вы, конечно же, можете приложить и свое фото к резюме.
+									<br />
+									Кроме того, мы с удовольствием почитаем ваши размышления на тему «Почему я хочу работать в UCOZ».{"\n\n"}
+								</Text>
+								<Text font="24px/30px 'AvenirNextCyrMedium', sans-serif" color="#333" margin="24px 0px 4px 0px">
+									Осторожно, злая система проверки резюме!
+								</Text>
+								<Text font="18px/26px 'AvenirNextCyrRegular', sans-serif" color="#333" sm-text-align="center">
+									Мы, разумеется, очень не любим преувеличения или даже явное несоответствие резюме действительности.
+									<br />
+									Рассказывайте о себе честно!{"\n\n"}
+								</Text>
 							</Box>
 							<Box display="none" justify-content="center" margin="32px 0px 0px 0px" md-display="none">
 								<Link
@@ -248,8 +257,15 @@ export default (() => {
 						</Components.Tab2>
 					</Components.Tabs2>
 					<Box display="flex" margin="35px 0px 0px 0px">
-						<Box width="30%" />
-						<Box display="flex" justify-content="flex-start" margin="0px 0px 0px 0px" width="70%">
+						<Box width="30%" sm-display="none" />
+						<Box
+							display="flex"
+							justify-content="flex-start"
+							margin="0px 0px 0px 0px"
+							width="70%"
+							sm-width="100%"
+							sm-justify-content="center"
+						>
 							<Components.PopUp
 								left="-30px"
 								bottom="auto"
@@ -507,5 +523,10 @@ export default (() => {
 		>
 			Made on Quarkly
 		</Link>
+		<RawHtml>
+			<style place={"endOfHead"} rawKey={"602d7555f92d7afdd8bf256a"}>
+				{"* {\n    scroll-behavior: smooth;\n    }\n    .active .fileText {\n    display: none;\n    }\n    input.fileText {\n        opacity: 1 !important;\n    }\n    * {\n      -webkit-tap-highlight-color: transparent!important;\n    }\n    @font-face {\n      font-family: 'AvenirNextCyrRegular';\n      src: url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Regular.eot');\n      src: url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'), url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Regular.woff') format('woff'), url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Regular.ttf') format('truetype');\n      font-weight: normal;\n      font-style: normal;\n      font-display: swap;\n    }\n    @font-face {\n      font-family: 'AvenirNextCyrMedium';\n      src: url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Medium.eot');\n      src: url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'), url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Medium.woff') format('woff'), url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Medium.ttf') format('truetype');\n      font-weight: normal;\n      font-style: normal;\n      font-display: swap;\n    }\n    @font-face {\n      font-family: 'AvenirNextCyrBold';\n      src: url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Bold.eot');\n      src: url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'), url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Bold.woff') format('woff'), url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Bold.ttf') format('truetype');\n      font-weight: normal;\n      font-style: normal;\n      font-display: swap;\n    }\n    @font-face {\n      font-family: 'AvenirNextCyrDemi';\n      src: url('https://ruteam.netlify.app/fonts/AvenirNextCyr-Demi.otf');\n      font-weight: normal;\n      font-style: normal;\n      font-display: swap;\n    }\n    body {\n      font-family: 'AvenirNextCyrRegular', sans-serif;\n      font-weight: normal;\n      -webkit-font-smoothing: antialiased;\n      -moz-osx-font-smoothing: grayscale;\n    }"}
+			</style>
+		</RawHtml>
 	</Theme>;
 });

@@ -117,7 +117,7 @@ const overrides = {
 			"color": "#9BABBF",
 			"lg-margin": "10px 0px 0px 0px",
 			"children": <Link
-				href="http://ua.uteam.pro/"
+				href="http://ru.uteam.pro/"
 				color="#4a8cfa"
 				text-decoration-line="initial"
 				hover-color="#3d72cc"
@@ -126,7 +126,7 @@ const overrides = {
 				lg-padding="0px 0px 0px 0px"
 				lg-margin="0px 0px 0px 0px"
 			>
-				Вакансії в Україні{" "}
+				Вакансии в России
 			</Link>
 		}
 	},
@@ -317,7 +317,7 @@ const overrides = {
 	}
 };
 
-const Foooter = props => {
+const NewFooter = props => {
 	const {
 		override,
 		children,
@@ -364,8 +364,8 @@ const Foooter = props => {
 	</Section>;
 };
 
-Object.assign(Foooter, { ...Section,
+Object.assign(NewFooter, { ...Section,
 	defaultProps,
 	overrides
 });
-export default Foooter;
+export default NewFooter;

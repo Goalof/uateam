@@ -74,8 +74,8 @@ const overrides = {
 			"margin": "0px 0px 0px 0px",
 			"display": "inline-block",
 			"color": "#ffffff",
-			"children": <Link href="https://ru.uteam.pro/" color="#000000" text-decoration-line="initial" font="500 18px/50px 'AvenirNextCyrMedium', sans-serif">
-				Вакансии в России
+			"children": <Link href="/" color="#000000" text-decoration-line="initial" font="500 18px/50px 'AvenirNextCyrMedium', sans-serif">
+				Вакансії в Україні{"\n\n"}
 			</Link>
 		}
 	},
@@ -88,13 +88,13 @@ const overrides = {
 			"color": "#9BABBF",
 			"nout-display": "none",
 			"children": <Link
-				href="http://ua.uteam.pro/"
+				href="http://ru.uteam.pro/"
 				color="#9BABBF"
 				text-decoration-line="initial"
 				hover-color="#ffe02d"
 				transition="color 0.2s ease 0s"
 			>
-				Вакансії в Україні{" "}
+				Вакансии в России
 			</Link>
 		}
 	},
@@ -318,7 +318,9 @@ const overrides = {
 			"nout-width": "90%",
 			"nout-margin": "24px 0px 24px 12px",
 			"nout-font": "normal 500 18px/42px 'AvenirNextCyrMedium', sans-serif",
-			"children": "Вакансии в России"
+			"children": <>
+				Вакансії в Україні{"\n\n"}
+			</>
 		}
 	},
 	"menu": {
@@ -372,6 +374,13 @@ const overrides = {
 		"props": {
 			"slot": "link-index",
 			"children": "Главная"
+		}
+	},
+	"menuOverride5": {
+		"kind": "Override",
+		"props": {
+			"slot": "link-uteam",
+			"children": "uTeam"
 		}
 	},
 	"stackItem2": {
@@ -442,7 +451,7 @@ const overrides = {
 				lg-margin="0px 0px 0px 0px"
 				nout-font="18px AvenirNextCyrRegular, sans-serif"
 			>
-				Вакансії в Україні{" "}
+				Ваканасии в России
 			</Link>
 		}
 	},
@@ -620,14 +629,14 @@ const overrides = {
 			"nout-display": "none"
 		}
 	},
-	"menuOverride5": {
+	"menuOverride6": {
 		"kind": "Override",
 		"props": {
 			"slot": "item-404",
 			"display": "none"
 		}
 	},
-	"menuOverride6": {
+	"menuOverride7": {
 		"kind": "Override",
 		"props": {
 			"slot": "link-index",
@@ -635,21 +644,21 @@ const overrides = {
 			"children": "Главная"
 		}
 	},
-	"menuOverride7": {
+	"menuOverride8": {
 		"kind": "Override",
 		"props": {
 			"slot": "item-active",
 			"color": "#4a8cfa"
 		}
 	},
-	"menuOverride8": {
+	"menuOverride9": {
 		"kind": "Override",
 		"props": {
 			"slot": "link-active",
 			"color": "#4a8cfa"
 		}
 	},
-	"menuOverride9": {
+	"menuOverride10": {
 		"kind": "Override",
 		"props": {
 			"slot": "link",
@@ -660,21 +669,21 @@ const overrides = {
 			"hover-color": "#4a8cfa"
 		}
 	},
-	"menuOverride10": {
+	"menuOverride11": {
 		"kind": "Override",
 		"props": {
 			"slot": "link-uteam",
 			"children": "uTeam"
 		}
 	},
-	"menuOverride11": {
+	"menuOverride12": {
 		"kind": "Override",
 		"props": {
 			"slot": "item-pr-menedzher",
 			"display": "none"
 		}
 	},
-	"menuOverride12": {
+	"menuOverride13": {
 		"kind": "Override",
 		"props": {
 			"slot": "item-back-end-razrabotchik-php",
@@ -683,7 +692,7 @@ const overrides = {
 	}
 };
 
-const Header = props => {
+const HeaderNew = props => {
 	const {
 		override,
 		children,
@@ -732,6 +741,7 @@ const Header = props => {
 						<Override {...override("menuOverride2")} />
 						<Override {...override("menuOverride3")} />
 						<Override {...override("menuOverride4")} />
+						<Override {...override("menuOverride5")} />
 					</Menu>
 					<StackItem {...override("stackItem2")}>
 						<Override {...override("stackItemOverride2")} />
@@ -760,7 +770,6 @@ const Header = props => {
 					</StackItem>
 				</MobileSide>
 				<Menu {...override("menu1")}>
-					<Override {...override("menuOverride5")} />
 					<Override {...override("menuOverride6")} />
 					<Override {...override("menuOverride7")} />
 					<Override {...override("menuOverride8")} />
@@ -768,6 +777,7 @@ const Header = props => {
 					<Override {...override("menuOverride10")} />
 					<Override {...override("menuOverride11")} />
 					<Override {...override("menuOverride12")} />
+					<Override {...override("menuOverride13")} />
 				</Menu>
 				{"        "}
 			</StackItem>
@@ -777,8 +787,8 @@ const Header = props => {
 	</Section>;
 };
 
-Object.assign(Header, { ...Section,
+Object.assign(HeaderNew, { ...Section,
 	defaultProps,
 	overrides
 });
-export default Header;
+export default HeaderNew;
