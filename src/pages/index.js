@@ -1429,10 +1429,9 @@ export default (() => {
 							text-overflow="clip"
 							hyphens="manual"
 						>
-							6
+							5
 						</Strong>
 						{" "}
-						<br />
 					</Text>
 					<Text
 						font="normal 500 15px/18px 'AvenirNextCyrMedium'"
