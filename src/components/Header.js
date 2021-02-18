@@ -175,7 +175,8 @@ const overrides = {
 			"nout-height": "28px",
 			"nout-z-index": "6",
 			"nout-top": "35px",
-			"sm-margin": "-3px 0px 0px 0px"
+			"sm-margin": "-3px 0px 0px 0px",
+			"nout-cursor": "pointer"
 		}
 	},
 	"mobileSideOverride2": {
@@ -692,7 +693,7 @@ const overrides = {
 	}
 };
 
-const HeaderNew = props => {
+const Headerpointer = props => {
 	const {
 		override,
 		children,
@@ -787,8 +788,8 @@ const HeaderNew = props => {
 	</Section>;
 };
 
-Object.assign(HeaderNew, { ...Section,
+Object.assign(Headerpointer, { ...Section,
 	defaultProps,
 	overrides
 });
-export default HeaderNew;
+export default Headerpointer;

@@ -190,6 +190,11 @@ export default {
 			"overflow-y": "",
 			"overflow-x": "hidden"
 		},
-		"seo": {}
+		"seo": {
+			"favicon_32px": "https://uploads.quarkly.io/602a760f8db767001e87894b/images/favicon_uteam.png?v=2021-02-17T00:32:41.999Z",
+			"favicon_apple_152px": "https://uploads.quarkly.io/602a760f8db767001e87894b/images/favicon_uteam.png?v=2021-02-17T00:32:41.999Z",
+			"favicon_win10_270px": "https://uploads.quarkly.io/602a760f8db767001e87894b/images/favicon_uteam.png?v=2021-02-17T00:32:41.999Z",
+			"background_win10": "#5291FA"
+		}
 	}
 }

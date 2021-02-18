@@ -14,7 +14,13 @@ export default (() => {
 				Главная - Работа в uTeam
 			</title>
 			<meta name={"description"} content={"Работа в uCoz. Актуальные вакансии компании в российских офисах и удаленная работа. Как попасть в команду, и о нашем коллективе — uTeam."} />
-			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
+			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/602a760f8db767001e87894b/images/favicon_uteam.png?v=2021-02-17T00:32:41.999Z"} type={"image/x-icon"} />
+			<link rel={"apple-touch-icon"} href={"https://uploads.quarkly.io/602a760f8db767001e87894b/images/favicon_uteam.png?v=2021-02-17T00:32:41.999Z"} />
+			<link rel={"apple-touch-icon"} sizes={"76x76"} href={"https://uploads.quarkly.io/602a760f8db767001e87894b/images/favicon_uteam.png?v=2021-02-17T00:32:41.999Z"} />
+			<link rel={"apple-touch-icon"} sizes={"152x152"} href={"https://uploads.quarkly.io/602a760f8db767001e87894b/images/favicon_uteam.png?v=2021-02-17T00:32:41.999Z"} />
+			<link rel={"apple-touch-startup-image"} href={"https://uploads.quarkly.io/602a760f8db767001e87894b/images/favicon_uteam.png?v=2021-02-17T00:32:41.999Z"} />
+			<meta name={"msapplication-TileImage"} content={"https://uploads.quarkly.io/602a760f8db767001e87894b/images/favicon_uteam.png?v=2021-02-17T00:32:41.999Z"} />
+			<meta name={"msapplication-TileColor"} content={"#5291FA"} />
 		</Helmet>
 		<Section
 			height="100vh"
@@ -102,7 +108,7 @@ export default (() => {
 					<Components.MobileSide2
 						flex="1 0 auto"
 						nout-position="relative"
-						nout-z-index="5"
+						nout-z-index="4"
 						nout-display="flex"
 						nout-justify-content="flex-end"
 						nout-align-items="center"
@@ -131,6 +137,7 @@ export default (() => {
 							nout-z-index="6"
 							nout-top="35px"
 							sm-margin="-3px 0px 0px 0px"
+							nout-cursor="pointer"
 						/>
 						<Override
 							slot="Button Liner"
@@ -226,6 +233,8 @@ export default (() => {
 							<Override slot="link-uteam">
 								uTeam
 							</Override>
+							<Override slot="item-active" nout-color="#ed1212" />
+							<Override slot="link-active" nout-color="#FFE02D" nout-cursor="default" />
 						</Menu>
 						<StackItem width="70%" display="flex" lg-width="100%" nout-width="100%">
 							<Override
@@ -464,12 +473,12 @@ export default (() => {
 					<Box
 						padding="0 14% 0 14%"
 						margin="40px 0px 0px 0px"
-						nout-width="65%"
+						nout-width="55%"
 						nout-display="flex"
 						nout-flex-direction="column"
-						nout-align-items="flex-end"
-						nout-justify-content="center"
-						nout-padding="0 0% 0 0%"
+						nout-align-items="flex-start"
+						nout-justify-content="flex-start"
+						nout-padding="0 5% 0 5%"
 						nout-margin="40px 0px 20px 0px"
 					>
 						<Text
@@ -706,7 +715,7 @@ export default (() => {
 					<Components.MobileSide
 						flex="1 0 auto"
 						nout-position="relative"
-						nout-z-index="5"
+						nout-z-index="4"
 						nout-display="flex"
 						nout-justify-content="flex-end"
 						nout-align-items="center"
@@ -720,7 +729,7 @@ export default (() => {
 							nout-position="fixed"
 							nout-top={0}
 							nout-left={0}
-							nout-z-index="1"
+							nout-z-index="5"
 							nout-width="100%"
 							nout-height="100%"
 							nout-background="white"
@@ -735,6 +744,7 @@ export default (() => {
 							nout-z-index="6"
 							nout-top="35px"
 							sm-margin="-3px 0px 0px 0px"
+							nout-cursor="pointer"
 						/>
 						<Override
 							slot="Button Line"
@@ -742,6 +752,7 @@ export default (() => {
 							nout-min-height="3px"
 							border-radius="6px"
 							nout-position="absolute"
+							nout-z-index="5"
 						/>
 						<Override
 							slot="Button Line1"
@@ -816,6 +827,7 @@ export default (() => {
 							<Override slot="link-uteam">
 								uTeam
 							</Override>
+							<Override slot="link-active" nout-color="#FFE02D" nout-cursor="default" />
 						</Menu>
 						<StackItem width="70%" display="flex" lg-width="100%" nout-width="100%">
 							<Override
@@ -1132,7 +1144,7 @@ export default (() => {
 					</Text>
 					{"    "}
 				</StackItem>
-				<StackItem width="50%" display="flex" sm-width="50%">
+				<StackItem width="50%" display="flex" sm-width="100%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
 					<Image width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon6.svg?v=2021-01-27T14:59:58.226Z" />
@@ -1497,7 +1509,7 @@ export default (() => {
 		</Link>
 		<RawHtml>
 			<style place={"endOfHead"} rawKey={"602d7555f92d7afdd8bf256a"}>
-				{"* {\n  scroll-behavior: smooth;\n  }\n.nobutton {\npointer-events: none; \n}\n  .active .fileText {\n  display: none;\n  }\n  input.fileText {\n      opacity: 1 !important;\n  }\n  * {\n    -webkit-tap-highlight-color: transparent!important;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrRegular';\n    src: url('/fonts/AvenirNextCyr-Regular.eot');\n    src: url('/fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Regular.woff') format('woff'), url('/fonts/AvenirNextCyr-Regular.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: swap;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrMedium';\n    src: url('/fonts/AvenirNextCyr-Medium.eot');\n    src: url('/fonts/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Medium.woff') format('woff'), url('/fonts/AvenirNextCyr-Medium.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: swap;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrBold';\n    src: url('/fonts/AvenirNextCyr-Bold.eot');\n    src: url('/fonts/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Bold.woff') format('woff'), url('/fonts/AvenirNextCyr-Bold.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: swap;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrDemi';\n    src: url('/fonts/AvenirNextCyr-Demi.otf');\n    font-weight: normal;\n    font-style: normal;\n    font-display: swap;\n  }\n  body {\n    font-family: 'AvenirNextCyrRegular', sans-serif;\n    font-weight: normal;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n  }"}
+				{"* {\n  scroll-behavior: smooth;\n  }\n.nobutton {\npointer-events: none; \n}\n  .active .fileText {\n  display: none;\n  }\n  input.fileText {\n      opacity: 1 !important;\n  }\n  * {\n    -webkit-tap-highlight-color: transparent!important;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrRegular';\n    src: url('/fonts/AvenirNextCyr-Regular.eot');\n    src: url('/fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Regular.woff') format('woff'), url('/fonts/AvenirNextCyr-Regular.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: swap;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrMedium';\n    src: url('/fonts/AvenirNextCyr-Medium.eot');\n    src: url('/fonts/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Medium.woff') format('woff'), url('/fonts/AvenirNextCyr-Medium.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: swap;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrBold';\n    src: url('/fonts/AvenirNextCyr-Bold.eot');\n    src: url('/fonts/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Bold.woff') format('woff'), url('/fonts/AvenirNextCyr-Bold.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: swap;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrDemi';\n    src: url('/fonts/AvenirNextCyr-Demi.otf');\n    font-weight: normal;\n    font-style: normal;\n    font-display: swap;\n  }\n  body {\n    font-family: 'AvenirNextCyrRegular', sans-serif;\n    font-weight: normal;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n  }\n:focus {\n    outline: none;\n}\n"}
 			</style>
 		</RawHtml>
 	</Theme>;
