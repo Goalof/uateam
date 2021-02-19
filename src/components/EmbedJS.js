@@ -12,21 +12,17 @@ const customJs = `
         document.getElementsByTagName(h)[0].appendChild(a)
     })(); 
 `;
-let mounted;
 
 const EmbedJS = ({
 	children,
-	isOpen,
 	...props
 }) => {
 	const ref = useRef(null);
 	useLayoutEffect(() => {
-		if (!isOpen || mounted) return;
 		const script = document.createElement("script");
 		script.innerHTML = customJs;
 		ref.current.appendChild(script);
-		mounted = true;
-	}, [isOpen]);
+	}, []);
 	return <div {...props} ref={ref} />;
 };
 
