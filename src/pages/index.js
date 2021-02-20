@@ -231,7 +231,7 @@ export default (() => {
 								Главная
 							</Override>
 							<Override slot="link-uteam">
-								uTeam
+								Команда
 							</Override>
 							<Override slot="item-active" nout-color="#ed1212" />
 							<Override slot="link-active" nout-color="#FFE02D" nout-cursor="default" />
@@ -825,7 +825,7 @@ export default (() => {
 								Главная
 							</Override>
 							<Override slot="link-uteam">
-								uTeam
+								Команда
 							</Override>
 							<Override slot="link-active" nout-color="#FFE02D" nout-cursor="default" />
 						</Menu>
@@ -1038,7 +1038,7 @@ export default (() => {
 							hover-color="#4a8cfa"
 						/>
 						<Override slot="link-uteam">
-							uTeam
+							Команда
 						</Override>
 					</Menu>
 					{"        "}

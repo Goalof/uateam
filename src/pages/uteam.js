@@ -874,49 +874,6 @@ export default (() => {
 											width="90px"
 											height="90px"
 											margin="0px 0px 24px 0px"
-											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/gurevich.jpg?v=2021-02-03T10:12:38.856Z"
-											border-radius="100%"
-										/>
-										<Text
-											font="normal 400 18px/18px 'AvenirNextCyrMedium', sans-serif"
-											margin="0px 0px 12px 0px"
-											display="inline-block"
-											sm-text-align="center"
-											sm-margin="0px 0px 30px 0px"
-											text-align="left"
-											letter-spacing="0.3px"
-											color="#3D72CC"
-										>
-											Михаил Гуревич
-										</Text>
-										<Text
-											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
-											margin="0px 0px 0px 0px"
-											display="inline-block"
-											sm-text-align="center"
-											sm-margin="0px 0px 30px 0px"
-											text-align="left"
-											letter-spacing="0.3px"
-											color="#9BABBF"
-										>
-											Финансовый директор
-										</Text>
-										{"    "}
-									</StackItem>
-									<StackItem width="20%" display="flex" lg-width="50%" sm-width="100%">
-										<Override
-											slot="StackItemContent"
-											align-items="flex-start"
-											justify-content="flex-start"
-											flex-direction="column"
-											lg-align-items="center"
-											lg-justify-content="center"
-										/>
-										{"        "}
-										<Image
-											width="90px"
-											height="90px"
-											margin="0px 0px 24px 0px"
 											src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/zhukova.jpg?v=2021-02-03T10:12:38.858Z"
 											border-radius="100%"
 										/>
@@ -1102,7 +1059,7 @@ export default (() => {
 											justify-content="center"
 										>
 											<Text font="500 36px 'AvenirNextCyrBold', sans-serif" color="#ffffff">
-												+53
+												+54
 											</Text>
 										</Box>
 										<Text

@@ -381,7 +381,7 @@ const overrides = {
 		"kind": "Override",
 		"props": {
 			"slot": "link-uteam",
-			"children": "uTeam"
+			"children": "Команда"
 		}
 	},
 	"stackItem2": {
@@ -674,7 +674,7 @@ const overrides = {
 		"kind": "Override",
 		"props": {
 			"slot": "link-uteam",
-			"children": "uTeam"
+			"children": "Команда"
 		}
 	},
 	"menuOverride12": {
